@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Help Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        .main-text {
+            font-size: 5em;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 3px;
+            animation: fadeInScale 2s ease-out;
+        }
+        
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .main-text span {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .main-text span:nth-child(1) { animation-delay: 0s; }
+        .main-text span:nth-child(2) { animation-delay: 0.1s; }
+        .main-text span:nth-child(3) { animation-delay: 0.2s; }
+        .main-text span:nth-child(4) { animation-delay: 0.3s; }
+        .main-text span:nth-child(5) { animation-delay: 0.4s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .proof-section {
+            width: 100%;
+            max-width: 800px;
+            border: 2px dashed #444;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .proof-section h2 {
+            color: #888;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .proof-placeholder {
+            color: #555;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-text">
+        <span>C</span><span>L</span><span>A</span><span>U</span><span>D</span><span>E</span>
+        <br>
+        <span>H</span><span>E</span><span>L</span><span>P</span>
+        <span>B</span><span>O</span><span>T</span>
+        <br>
+        <span>C</span><span>A</span><span>N</span>
+        <span>W</span><span>R</span><span>I</span><span>T</span><span>E</span>
+        <span>C</span><span>O</span><span>D</span><span>E</span>
+    </div>
+    
+    <div class="proof-section">
+        <h2>Photo Proof</h2>
+        <p class="proof-placeholder">Add your screenshot or proof here</p>
+    </div>
+</body>
+</html>
